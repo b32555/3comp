@@ -1,0 +1,10 @@
+import numpy as np
+from scipy.integrate import quad
+
+def integrand(x):
+    return x**2 * np.sin(2*x**4)
+
+result, error = quad(integrand, 0, np.inf)
+
+print("The value of the definite integral is:", result)
+print("The error estimate is:", error)
