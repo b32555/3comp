@@ -1,0 +1,7 @@
+import sympy as sp
+
+x = sp.symbols('x')
+integrand = x / (24 + x**2)
+indefinite_integral = sp.integrate(integrand, x)
+
+print("The indefinite integral is:", indefinite_integral)
